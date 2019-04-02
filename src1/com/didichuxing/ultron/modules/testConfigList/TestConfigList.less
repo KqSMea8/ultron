@@ -1,0 +1,89 @@
+.taskList {
+  .tabBox {
+    margin: 24px;
+    .alertDiv {
+      display: inline-block;
+      margin-left: 30px;
+      color: #f44;
+    }
+  }
+  position: relative;
+  .tips {
+    width: 100%;
+    position: fixed;
+    top: 64px;
+    background: #f0f2f5;
+    z-index: 99;
+    font-size: 14px;
+    .text {
+      text-align: center;
+      color: #f44;
+    }
+  }
+  .query {
+    margin-bottom: 20px;
+  }
+  .new {
+    position: absolute;
+    z-index: 9;
+    right: 24px;
+  }
+  .mask {
+    position: fixed;
+    width: 40%;
+    top: 45%;
+    height: 50px;
+    left: 30%;
+    background-color: #ddd;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    display: none;
+    & > button {
+      height: 30px;
+      width: 100px;
+      padding: 4px 6px;
+    }
+  }
+  .btn {
+    background-color: #09c;
+    color: #fff;
+  }
+  .btn:hover {
+    background-color: #09c;
+    color: #fff;
+  }
+  .block {
+    display: none;
+  }
+
+  :global {
+    .ant-table-pagination.ant-pagination {
+      float: none;
+      display: flex;
+      justify-content: center;
+
+      > li {
+        display: block;
+      }
+    }
+  }
+}
+
+.addNewModelBox {
+  .addNewModel {
+    padding: 32px 0 24px 0;
+    display: flex;
+    justify-content: space-between;
+
+    > button {
+      display: block;
+    }
+  }
+
+  :global {
+    .ant-confirm .ant-confirm-btns {
+      display: none;
+    }
+  }
+}

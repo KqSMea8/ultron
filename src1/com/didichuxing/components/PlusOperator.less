@@ -1,0 +1,51 @@
+/**
+ * Copyright (c) 2018-present, Didi, Inc.
+ * All rights reserved.
+ *
+ * @author Cory(kuanghongrui@didichuxing.com)
+ *
+ * @file The less style of PlusOperator
+ */
+
+@import '~antd/es/style/themes/default.less';
+
+.plusOperator {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plusOperatorItem {
+  display: flex;
+  flex-flow: row;
+  > :global(:first-child) {
+    flex: 1;
+  }
+}
+
+.plusOperatorDelete {
+  position: relative;
+  margin: 0 10px;
+  :global{
+    i {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      &:hover {
+        color: @link-hover-color;
+      }
+      &:active {
+        color: @link-active-color;
+      }
+    }
+  }
+}
+
+.plusOperatorBtnBar {
+  padding: 24px 0;
+}
+
+.plusOperatorBtn {
+  width: 100%;
+}

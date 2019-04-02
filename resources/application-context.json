@@ -1,0 +1,139 @@
+{
+    "appName": "Ultron",
+    "logo": "logo.svg",
+    "homePath": "/new.html/ultron/interfaceTest",
+    "copyright": "质量技术部 - 质量架构",
+    "menuMode": "horizontal",
+    "siderMenus": [
+        {
+            "name": "容量大盘",
+            "icon": "global",
+            "path": "/rewrite-new.html/ultron/capacity"
+        },
+        {
+            "name": "接口级压测",
+            "icon": "usb",
+            "path": "/rewrite-new.html/ultron/interfaceTest"
+        },
+        {
+            "name": "全链路压测",
+            "icon": "api",
+            "path": "/rewrite-full-links"
+        },
+        {
+            "name": "常驻小流量",
+            "icon": "dashboard",
+            "path": "/rewrite-guardians"
+        },
+        {
+            "name": "配置管理",
+            "icon": "setting",
+            "path": "/rewrite-setting"
+        },
+        {
+            "name": "工具",
+            "icon": "tool",
+            "path": "/rewrite-new.html/ultron/tool"
+        }
+    ],
+    "routes": {
+        "/rewrite-new.html/ultron/interfaceTest": "com/didichuxing/ultron/modules/rewrite/Rewrite",
+        "/rewrite-new.html/ultron/capacity": "com/didichuxing/ultron/modules/rewrite/Rewrite",
+        "/rewrite-full-links": "com/didichuxing/ultron/modules/rewrite/Rewrite",
+        "/rewrite-guardians": "com/didichuxing/ultron/modules/rewrite/Rewrite",
+        "/rewrite-setting": "com/didichuxing/ultron/modules/rewrite/Rewrite",
+        "/rewrite-new.html/ultron/tool": "com/didichuxing/ultron/modules/rewrite/Rewrite",
+        "/new.html/": "com/didichuxing/Index",
+        "/new.html/workspace": {
+            "component": "com/didichuxing/ria/Workspace"
+        },
+        "/new.html/ultron": {
+            "component": "com/didichuxing/ria/Workspace",
+            "routes": {
+                "/interfaceTest": {
+                    "component": "com/didichuxing/ultron/modules/testConfigList/TestConfigList",
+                    "routes": {
+                        "/httpSingle": {
+                            "component": "com/didichuxing/ultron/modules/httpSingleEdit/HttpSingleEdit"
+                        },
+                        "/httpScene": {
+                            "component": "com/didichuxing/ultron/modules/httpSceneEdit/HttpSceneEdit"
+                        },
+                        "/httpMulti": {
+                            "component": "com/didichuxing/ultron/modules/httpMultiEdit/HttpMultiEdit"
+                        },
+                        "/thrift": {
+                            "component": "com/didichuxing/ultron/modules/thriftEdit/ThriftEdit"
+                        },
+                        "/taskDetail": {
+                            "component": "com/didichuxing/ultron/modules/viewTask/ViewTask"
+                        },
+                        "/httpSceneDetail": {
+                            "component": "com/didichuxing/ultron/modules/httpSceneDetail/HttpSceneDetail"
+                        },
+                        "/httpSingleDetail": {
+                            "component": "com/didichuxing/ultron/modules/httpSingleDetail/HttpSingleDetail"
+                        },
+                        "/httpMultiDetail": {
+                            "component": "com/didichuxing/ultron/modules/httpMultiDetail/HttpMultiDetail"
+                        },
+                        "/thriftDetail": {
+                            "component": "com/didichuxing/ultron/modules/thriftDetail/ThriftDetail"
+                        }
+                    }
+                },
+                "/capacity": {
+                    "component": "com/didichuxing/ultron/modules/businessCapacity/BusinessCapacity",
+                    "routes": {
+                        "/business": {
+                            "component": "com/didichuxing/ultron/modules/businessCapacity/BusinessCapacity"
+                        },
+                        "/service": {
+                            "component": "com/didichuxing/ultron/modules/serviceCapacity/ServiceCapacity"
+                        },
+                        "/target": {
+                            "component": "com/didichuxing/ultron/modules/plate/Plate"
+                        },
+                        "/targetDetail": {
+                            "component": "com/didichuxing/ultron/modules/targetDetail/TargetDetail"
+                        },
+                        "/moduleDetail": {
+                            "component": "com/didichuxing/ultron/modules/moduleDetail/ModuleDetail"
+                        },
+                        "/establish": {
+                            "component": "com/didichuxing/ultron/modules/establishComplianceRate/EstablishComplianceRate"
+                        }
+                    }
+                },
+                "/tool": {
+                    "component": "com/didichuxing/ultron/modules/pressureUser/PressureUser",
+                    "routes": {
+                        "/pressureUser": {
+                            "component": "com/didichuxing/ultron/modules/pressureUser/PressureUser"
+                        },
+                        "/geographyTool": {
+                            "component": "com/didichuxing/ultron/modules/geographyTool/GeographyTool"
+                        },
+                        "/orderChange": {
+                            "component": "com/didichuxing/ultron/modules/orderChange/OrderChange"
+                        },
+                        "/jarDownload": {
+                            "component": "com/didichuxing/ultron/modules/jarDownload/JarDownload"
+                        }
+                    }
+                },
+                "/businessDetails": {
+                    "component": "com/didichuxing/ultron/modules/businessDetails/BusinessDetails"
+                }
+            }
+        }
+    },
+    "contextLauncher": "com/didichuxing/context/NormalDynamicContextLauncher",
+    "header": "com/didichuxing/layout/NormalHeader",
+    "responseBodyKey": {
+        "dataKey": "data",
+        "errorMsgKey": "errmsg",
+        "errorCodeKey": "errno"
+    },
+    "menuTheme": "dark"
+}

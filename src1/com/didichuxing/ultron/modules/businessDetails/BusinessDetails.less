@@ -1,0 +1,74 @@
+.spinWrapper{
+    width: 100%;
+    .main{
+        overflow: hidden;
+        background-color: rgb(247, 248, 251);
+        .layoutSider{
+          overflow: auto;
+          height: 100vh;
+          position: fixed;
+          left: 0;
+        }
+        .layoutContent{
+          margin-left: 200px;
+          background-color: #f7f8fb;
+        }
+        .Menu{
+          float: left;
+          min-height: 1000px;
+        }
+        .mainRight {
+          width: 100%;
+          padding-left: 10px;
+          padding-right: 20px;
+          padding-top: 15px;
+        }
+    }
+}
+.spin{
+    background-color: #f7f8fb;
+    :global{
+        .ant-tabs-bar{
+            background-color: #fff;
+            padding-left: 24px;
+            margin-bottom: 1px;
+        }
+        .ant-tabs:not(.ant-tabs-vertical) > .ant-tabs-content-animated{
+            display: flex;
+        }
+    }
+    .businessDetails{
+        padding: 24px;
+        padding-bottom: 0px;
+        background-color: #fff;
+        margin-bottom: -7px;
+        .businessDetailsTitle{
+            font-size: 20px;
+            color: rgba(0,0,0,0.85);
+            line-height: 22px;
+            font-family: PingFangSC-Medium;
+        }
+        .businessDetailsTime{
+            margin-top: 20px;
+            margin-bottom: 7px;
+            font-size: 14px;
+            color: rgba(0,0,0,0.65);
+            line-height: 22px;
+            font-family: PingFangSC-Regular;
+        }
+    }
+}
+.noData{
+    text-align: center;
+    margin-top: 12px;
+}
+.breadcrumb{
+    margin-bottom: 15px;
+    padding-left: 26px;
+    .capacityReportBreadcrumb {
+        cursor: pointer;
+        &:hover{
+            color: #1890ff;
+        }
+    }
+}

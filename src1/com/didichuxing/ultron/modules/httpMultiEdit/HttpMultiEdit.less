@@ -1,0 +1,116 @@
+.httpMulti {
+  margin: 24px;
+  .saveBox {
+    padding:0 0 5px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom:1px solid #ccc;
+    .newlyBuild {
+      margin-top:10px;
+      em {
+        font-style: normal;
+        color: #1890ff;
+      }
+    }
+    .saveButton {
+      .saveMargin {
+        margin-right:10px;
+      }
+    }
+  }
+  .httpContent{
+    margin-top:5px;
+    .headerNameValue {
+      min-height: 220px;
+      .everyHeaderNameValue {
+        margin-bottom:10px;
+        .addButton {
+          margin-top:3px;
+        }
+        .deleteButton {
+          margin-left:-30px;
+          margin-top: 3px;
+        }
+      }
+    }
+    .cookieNameValue {
+      min-height: 220px;
+      .everyCookieNameValue {
+        margin-bottom:10px;
+        .addButton {
+          margin-top:3px;
+        }
+        .deleteButton {
+          margin-left:-30px;
+          margin-top: 3px;
+        }
+      }
+    }
+    .log{
+      min-height: 220px;
+      .filePath {
+        margin-top: 10px;
+      }
+      .urlPrefix {
+        margin-top: 10px;
+      }
+      .requestLogUrl {
+        margin-top: 10px;
+      }
+    }
+    .config{
+      margin-bottom: 10px;
+    }
+  }
+  .comment {
+    background: #f6f6f6;
+    min-height: 200px;
+  }
+  .topRequestLog {
+    vertical-align: top;
+  }
+  .spanMaxRedirect {
+    position: relative;
+    left: -16px;
+  }
+
+  .spanMaxRedirectNone {
+    display: none;
+  }
+  .fileNameInput {
+    width: 400px;
+    margin-right: 12px;
+  }
+  .fileInput {
+    display: none;
+    // width: 100px;
+    // border-style: none;
+    // padding: 0 0 0 12px;
+    z-index: 9;
+    position: absolute;
+    background: #434552;
+    width: 88px;
+    height: 32px;
+  }
+  .icon {
+    position: relative;
+    margin-right: 8px;
+    margin-left: -5px;
+    .hideShow {
+      font-style: normal;
+      width: 720px;
+      height:60px;
+      border: 1px solid #eee;
+      border-radius: 5px;
+      position: absolute;
+      left: 15px;
+      top: 5px;
+      z-index: 9999;
+      background:#eee;
+      p {
+        line-height: 10px;
+      }
+    }
+  }
+}

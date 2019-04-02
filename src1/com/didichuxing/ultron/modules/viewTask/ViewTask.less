@@ -1,0 +1,237 @@
+.ViewDetails{
+  margin: 24px;
+  background-color: #fff;
+  ul,li{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+  }
+  .ViewBox{
+    margin-top: 20px;
+    border-bottom: 1px solid;
+    padding-bottom: 12px;
+    .bread{
+      display: inline-block;
+      .href{
+        display: inline-block;
+        margin-right: 4px;
+        a{
+          font-style: normal;
+          color: #1890ff;
+          font-weight: bold;
+        }
+      }
+      .blue{
+        margin-left: 6px;
+        color: #1890ff;
+      }
+    }
+    .breadButton{
+      display: inline-block;
+      float: right;
+      button{
+        margin-left: 6px;
+      }
+    }
+  }
+  .height{
+    border:1px solid #B0C5DE;
+  }
+  .tabs{
+    margin-top: 20px;
+    .details{
+      background-color: #fff;
+      .box{
+        margin-bottom: 4px;
+        border-radius: 6px;
+      }
+      .header{
+        background-color: #B0C5DE;
+        padding: 4px 10px;
+      }
+    }
+    .start{
+      position: relative;
+      min-height: 20px;
+      .txt{
+        position: absolute;
+        top:0px;
+        left:10px;
+      }
+    }
+    .left{
+      margin-left: 80px;
+    }
+    .backcolor{
+      background-color: #fff;
+    }
+  }
+  .float{
+    float: left;
+    padding-left: 10px;
+  }
+  .right{
+    width: 50%;
+    float: right;
+    display: flex;
+    justify-content:space-around;
+  }
+  .title{
+    background-color: #B0C5DE;
+    height: 32px;
+    line-height: 32px;
+  }
+  .echart{
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f6f6f6;
+    width: 100%;
+    li{
+      padding: 8px 12px 0 8px;
+      margin-left: 15px;
+      margin-right: 15px;
+      display: block;
+      width: 48%;
+      height: 300px;
+      border-radius: 6px;
+      background-color: #fff;
+      box-sizing: border-box;
+    }
+  }
+  .code {
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f6f6f6;
+    width: 100%;
+    padding-top: 15px;
+    .oLi {
+      padding: 8px 12px 0 8px;
+      margin-left: 15px;
+      margin-right: 15px;
+      display: block;
+      width: 48%;
+      height: 300px;
+      border-radius: 6px;
+      background-color: #fff;
+      box-sizing: border-box;
+    }
+  }
+  .center{
+    text-align: center;
+    margin: 6px 0;
+  }
+  .bodyTab{
+    background-color: #B0C5DE;
+    border: 1px solid #ADD8E6;
+  }
+  .tableList{
+    text-align: center;
+    thead{
+      tr{
+        th{
+          text-align: center;
+          padding: 0px 10px;
+          height: 30px;
+          background: #f2f2f2;
+        }
+      }
+    }
+    tbody{
+      tr{
+        td{
+          text-align: center;
+          padding: 0px 10px;
+          height: 30px;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+
+  .detailTestMode {
+    display: inline-block;
+    padding-left: 16px;
+  }
+
+  .empty {
+    margin: 0 16px 16px 16px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    background: #f6f6f6;
+  }
+}
+.addModel {
+  height:400px;
+  overflow-y: scroll;
+}
+.border {
+  border: 1px solid #f2f2f2;
+  margin-top: 10px;
+  padding: 0 10px;
+  max-height: 350px;
+  overflow-y: scroll;
+}
+.radioStyle {
+  margin-right: 10px;
+  border-width: 0 0 1px 0;
+  border-radius: 0px !important;
+}
+.zhankai {
+  background: #f6f6f6;
+  text-align: center;
+  span{
+    cursor: pointer;
+    color: #808080;
+  }
+}
+.shouqi {
+  background: #f6f6f6;
+  text-align: center;
+  span{
+    cursor: pointer;
+    color: #808080;
+  }
+}
+.icon {
+  margin-left: 10px;
+  position: relative;
+  .hideShow {
+    padding: 5px 0 5px 5px;
+    font-size: 12px;
+    font-style: normal;
+    width: 350px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    position: absolute;
+    left: 15px;
+    top: 3px;
+    z-index: 9999;
+    background:#eee;
+    p {
+      line-height: 10px;
+    }
+  }
+}
+:global {
+  .ant-radio-button-wrapper-checked{
+    box-shadow: none;
+    &:hover,
+    &:active{
+      box-shadow: none;
+      border-width: 0 0 1px 0 !important;
+      border-color: #40a9ff !important;
+    }
+  }
+  .ant-radio-button-wrapper:not(:first-child)::before {
+    width: 0px;
+  }
+  .ant-radio-button-wrapper:first-child::before {
+    width: 0px;
+  }
+  .ant-radio-button-wrapper:first-child {
+    border-left: none;
+  }
+}

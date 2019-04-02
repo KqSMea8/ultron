@@ -1,0 +1,51 @@
+.tree{
+    height: 200px;
+    overflow: scroll;
+    border-radius: 4px;
+    border: 1px solid rgb(217, 217, 217);
+    :global{
+        .ant-tree li{
+            padding: 0;
+        }
+    }
+    .icon{
+        background-size: 24px 24px!important;
+        text-indent: -9999px;
+    }
+    .noCheckBox{
+        :global{
+            .ant-tree-checkbox{
+                display: none;
+            }
+        }
+    }
+    .hasCheckBox{
+        :global{
+            .ant-tree-checkbox{
+                display: inline-block;
+            }
+        }
+    }
+    .noIcon{
+        :global{
+            .ant-tree-iconEle{
+                display: none;
+            }
+        }
+    }
+    .hasIcon{
+        :global{
+            .ant-tree-iconEle{
+                display: inline-block;
+            }
+        }
+    }
+}
+.exhibition{
+    height: 100px;
+    margin-top: 25px;
+    padding: 0 8px;
+    overflow: scroll;
+    border-radius: 4px;
+    border: 1px solid rgb(217, 217, 217);
+}

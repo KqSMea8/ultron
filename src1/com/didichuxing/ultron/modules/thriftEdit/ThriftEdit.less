@@ -1,0 +1,117 @@
+.thrift {
+  margin: 24px;
+  .saveBox {
+    padding: 0 0 5px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    .newlyBuild {
+      margin-top: 10px;
+      em {
+        font-style: normal;
+        color: #1890ff;
+      }
+    }
+    .saveButton {
+      .saveMargin {
+        margin-right: 10px;
+      }
+    }
+  }
+  .method {
+    margin: 10px 0 10px 0;
+  }
+  .idl {
+    display: flex;
+    justify-content: space-between;
+    .idlSpan{
+      margin-top:5px;
+    }
+  }
+  .serverName{
+    margin-top:10px;
+    display: flex;
+    justify-content: space-between;
+    .serverNameSpan{
+      margin-top:5px;
+    }
+  }
+  .methodName {
+    margin-top:10px;
+    display: flex;
+    justify-content: space-between;
+    .methodNameSpan{
+      margin-top:5px;
+    }
+  }
+  .comment {
+    background: #f6f6f6;
+    min-height: 200px;
+  }
+  .httpContent {
+    margin-top: 5px;
+    .params {
+      min-height: 220px;
+    }
+    .moreConfig {
+      min-height: 220px;
+      .config {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .fileNameInput {
+    width: 400px;
+    margin-right: 12px;
+  }
+  .fileInput {
+    display: none;
+    // width: 100px;
+    // border-style: none;
+    // padding: 0 0 0 12px;
+    z-index: 9;
+    position: absolute;
+    background: #434552;
+    width: 88px;
+    height: 32px;
+  }
+}
+.icon {
+   position: relative;
+   .hideShow {
+     font-style: normal;
+     width: 720px;
+     height:60px;
+     border: 1px solid #eee;
+     border-radius: 5px;
+     position: absolute;
+     left: 23px;
+     top: 5px;
+     z-index: 9999;
+     background:#eee;
+     p {
+       line-height: 10px;
+     }
+   }
+ }
+.icons {
+  position: relative;
+  margin-left:10px;
+  .hideShows {
+    font-style: normal;
+    width: 85px;
+    height:25px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    position: absolute;
+    left: 18px;
+    top: -4px;
+    z-index: 9999;
+    background:#eee;
+    padding-left: 10px;
+    p {
+      line-height: 3px;
+    }
+  }
+}

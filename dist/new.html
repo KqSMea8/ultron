@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html><head><link href="/assets/styles.css" rel="stylesheet"></head>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Ultron</title>
+    <meta name="keywords" content="【keywords】"/>
+    <meta name="description" content="【description】"/>
+    <link rel="dns-prefetch" href="//sec-aegisfe.didistatic.com"/>
+    <link rel="dns-prefetch" href="//tracker.didistatic.com"/>
+    <link rel="dns-prefetch" href="//omgup.xiaojukeji.com"/>
+
+    <link rel="icon" type="image/x-icon" href="/assets/logo.svg"/>
+    <link rel="shortcut icon" href="/assets/logo.svg">
+    <!--[if lt IE 9]>
+    <script type="text/javascript">
+        alert('请升级您的浏览器~');
+        location.href = 'https://www.baidu.com/s?wd=%E6%B5%8F%E8%A7%88%E5%99%A8';
+    </script>
+    <![endif]-->
+
+    <style>
+        #_thor_html_apploading {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: transparent;
+        }
+
+        #_thor_html_apploading > table {
+            height: 80%;
+            width: 100%;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        ._thor_html_apploading {
+            width: 40px;
+            height: 40px;
+            background-color: #1890ff; /*#0EC9DC;*/
+            box-shadow: 0 0 5px #29d, 0 0 5px #29d;
+
+            margin: 100px auto;
+            -webkit-animation: rotateplane 1.2s infinite ease-in-out;
+            animation: rotateplane 1.2s infinite ease-in-out;
+        }
+
+        @-webkit-keyframes rotateplane {
+            0% {
+                -webkit-transform: perspective(120px)
+            }
+            50% {
+                -webkit-transform: perspective(120px) rotateY(180deg)
+            }
+            100% {
+                -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
+            }
+        }
+
+        @keyframes rotateplane {
+            0% {
+                transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+                -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+            }
+            50% {
+                transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+                -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+            }
+            100% {
+                transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+                -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+            }
+        }
+    </style>
+<body>
+<div id="_thor_html_apploading">
+    <table>
+        <tr>
+            <td>
+                <div class='_thor_html_apploading'></div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<script>
+    window.addEventListener('load', function () {
+        document.getElementById('_thor_html_apploading').style.display = 'none';
+    });
+</script>
+<script src="/assets/styles.js"></script><script src="/assets/main.js"></script></body>
+</html>

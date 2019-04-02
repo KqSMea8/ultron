@@ -1,0 +1,67 @@
+/**
+ * Copyright (c) 2018-present, Didi, Inc.
+ * All rights reserved.
+ *
+ * @author Cory(kuanghongrui@didichuxing.com)
+ *
+ * @file The less style of Application
+ */
+
+@import '~antd/lib/style/themes/default.less';
+
+html,
+body,
+.app {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.app > div {
+  height: 100%;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+pre {
+  padding: 12px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.appContainer {
+  // TODO:
+}
+
+.globalSpin {
+  width: 100%;
+  margin: 40px 0 !important;
+}
+
+// temp fix for https://github.com/ant-design/ant-design/commit/a1fafb5b727b62cb0be29ce6e9eca8f579d4f8b7
+:global {
+  i {
+    svg {
+      display: block;
+    }
+  }
+  .logo-area-expanded {
+    .logo-normal {
+      svg {
+        height: 24px;
+        fill: @component-background;
+      }
+    }
+  }
+  .ant-spin-container {
+    overflow: visible !important;
+  }
+}

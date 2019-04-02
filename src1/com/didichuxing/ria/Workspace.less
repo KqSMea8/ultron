@@ -1,0 +1,235 @@
+/**
+ * Copyright (c) 2018-present, Didi, Inc.
+ * All rights reserved.
+ *
+ * @author Cory(kuanghongrui@didichuxing.com)
+ *
+ * @file The style of Workspace
+ */
+
+@import '~antd/es/style/themes/default.less';
+
+.rootLayout {
+  min-height: 100%;
+  :global {
+    .ant-layout {
+      background-color: @component-background;
+      &-sider {
+        z-index: 999;
+        overflow: auto;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        background-color: #3b3c48;
+        &-trigger {
+          background-color: #3b3c48;
+        }
+      }
+    }
+  }
+}
+.tips {
+  width: 100%;
+  height: 20px;
+  //position: fixed;
+  //top:64px;
+  //left:0px;
+  background:#f0f2f5;
+  color: #f44;
+  line-height: 20px;
+  text-align: center;
+  // z-index: 9;
+}
+
+.siderMenu {
+  background-color: #3b3c48 !important;
+}
+
+.logoLine {
+  width: 1px;
+  height: 24px;
+  opacity: 0.2;
+  margin: 0 10px;
+  background-color: #000;
+}
+
+.appName {
+  font-size: 18px;
+  margin: 0;
+  color: #FFF;
+}
+
+.contentLayout {
+  transition: all 0.3s;
+  position: relative;
+}
+
+.contentLayoutCollapsed {
+  margin-left: 80px;
+}
+
+.header,
+.footer {
+  padding: 0 !important;
+}
+
+.header {
+  display: flex !important;
+  height: 64px !important;
+  display: flex;
+  background-color: #182836 !important;
+  box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08) !important;
+  position: fixed !important;
+  z-index: 998 !important;
+  width: 100% !important;
+}
+
+.contentArea {
+  margin-top: 64px;
+  .marqueeContainer{
+    position: fixed;
+    top: 64px;
+    z-index: 99;
+    width: 100%;
+    background-color: #FFF;
+    .marqueeIconContainer{
+      text-align: center;
+      .marqueeIcon{
+        font-size: 18px;
+        vertical-align: middle;
+        color: #1890ff;
+      }
+    }
+    .marquee{
+      height: 21px;
+      overflow: hidden;
+      .marqueeWord{
+        height: 21px;
+        overflow: hidden;
+        color: #f44;
+        animation:myfirst 30s linear infinite;
+        position: absolute;
+        left: 0vw;
+      }
+      @keyframes myfirst
+      {
+      0%   {left:100vw}
+      100%  {left:-100vw}
+      }
+    }
+  }
+}
+
+.logo {
+  :global {
+    svg {
+      height: 24px;
+      fill: #FFF;
+    }
+  }
+}
+
+.logoArea {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  padding-left: 24px;
+  min-width: 244px;
+  background-color: #434552;
+  background: url('ultron.png') no-repeat center center;
+  background-size: 40%;
+}
+
+.footer {
+  > :global(div) {
+    margin: 18px 0;
+  }
+}
+
+.footerCopyright {
+  color: rgba(0, 0, 0, 0.45);
+  line-height: 1;
+  text-align: center;
+}
+
+.content {
+  // margin: 24px;
+  background-color: #f7f8fb;
+  height: 100%;
+  .contact{
+    position: fixed;
+    right: 0;
+    bottom:50px;
+    z-index: 9999;
+    width:25px;
+    background: #1890ff;
+    color: #fff;
+    cursor: pointer;
+    padding: 3px 1px 3px 6px;
+    line-height: 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    text-decoration: none;
+    .erweima {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      display: none;
+      width: 180px;
+      height: 200px;
+      padding:5px;
+      color:#333;
+      background: #fff;
+      box-shadow: 0 0 10px 1px #666;
+      p {
+        text-align: center;
+      }
+      .imgs {
+        width:170px;
+        height:171px;
+        background: url('dingding.jpg') no-repeat;
+      }
+    }
+    &:hover .erweima {
+      display: block;
+    }
+  }
+  .explain {
+    position: fixed;
+    right: 0;
+    bottom:170px;
+    z-index: 9999;
+    width:25px;
+    background: #1890ff;
+    color: #fff;
+    cursor: pointer;
+    padding: 3px 1px 3px 6px;
+    line-height: 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  .problem {
+    position: fixed;
+    right: 0;
+    bottom:290px;
+    z-index: 9999;
+    width:25px;
+    background: #1890ff;
+    color: #fff;
+    cursor: pointer;
+    padding: 3px 1px 3px 6px;
+    line-height: 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+}
+.messagesMarginTop{
+  margin-top: 21px;
+}
+:global {
+  .ant-message {
+    z-index: 1040;
+  }
+}

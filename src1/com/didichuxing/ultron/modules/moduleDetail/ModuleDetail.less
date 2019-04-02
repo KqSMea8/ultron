@@ -1,0 +1,146 @@
+.spin{
+  margin-left: -20px;
+  overflow: hidden;
+  margin-top: 72px;
+  margin-bottom: 40px;
+
+  :global{
+    .ant-card-bordered {
+      border-radius: 8px;
+      box-shadow: 10px 10px 20px #f2f2f2;
+      padding-top: 10px;
+      border: none;
+    }
+    .ant-card-body {
+      padding-top: 0px;
+      padding-bottom: 35px;
+    }
+  }
+}
+.main{
+  overflow: hidden;
+  display: flex;
+  background-color: rgb(247, 248, 251);
+  .layoutSider{
+    overflow: auto;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+  }
+  .layoutContent{
+    margin-left: 200px;
+    background-color: #f7f8fb;
+  }
+  .mainRight {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 15px;
+    .title {
+      font-family:PingFangSC-Regular;
+      font-weight: 400;
+      font-size: 12px;
+      color:rgba(0,0,0,0.45);
+      .businessName{
+        cursor: pointer;
+        &:hover{
+          color: #1890ff;
+        }
+      }
+      .modelName{
+        cursor: pointer;
+        &:hover{
+          color: #1890ff;
+        }
+      }
+    }
+    .complianceRate{
+      position: relative;
+      .complianceRateTitle{
+        color: rgba(0, 0, 0, 0.25);
+        font-size: 18px;
+        margin-bottom: 16px;
+      }
+      .colComplianceRateClassname {
+        padding-right: 20px;
+        padding-bottom: 20px;
+        float: left;
+      }
+      .establishComplianceRate{
+        position: absolute;
+        top: -26px;
+        right: 0px;
+        z-index: 2;
+      }
+    }
+    .historyTime {
+      display: flex;
+      justify-content: space-between;
+      .year {
+        margin-right:10px;
+        margin-bottom:10px;
+      }
+    }
+    .history {
+      // min-height: 228px;
+      background:rgba(255,255,255,1);
+      box-shadow:0px 2px 4px 0px rgba(0,0,0,0.06);
+      border-radius:8px;
+      padding-left: 40px;
+      padding-top: 24px;
+      // padding-bottom: 24px;
+      .fontBig{
+        font-size: 12px;
+      }
+      .fontBigName{
+        cursor: pointer;
+        color: #1890ff;
+      }
+      .fontBigs {
+        font-size:12px;
+        font-family:PingFangSC-Regular;
+        font-weight:400;
+        color:rgba(0,0,0,0.85);
+      }
+      .fontBigStyle {
+        width: 95px;
+        font-size:12px;
+        font-family:PingFangSC-Regular;
+        font-weight:400;
+        color:rgba(0,0,0,0.85);
+        display: inline-block;
+        text-align: right;
+      }
+      .memFontStyle {
+        width: 155px;
+        font-size:12px;
+        font-family:PingFangSC-Regular;
+        font-weight:400;
+        color:rgba(0,0,0,0.85);
+        display: inline-block;
+        text-align: right;
+      }
+      .noData {
+        font-size:12px;
+        font-family:PingFangSC-Regular;
+        font-weight:400;
+        color: #999999;
+        text-align: center;
+        padding-bottom: 15px;
+      }
+    }
+  }
+}
+.Menu{
+  float: left;
+  min-height: 1000px;
+}
+.childrenRender{
+  cursor: pointer;
+  &:hover{
+    color: #1890ff;
+  }
+}
+.spinWrapper{
+  width: 100%;
+}

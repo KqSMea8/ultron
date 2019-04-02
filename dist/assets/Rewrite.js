@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{1063:function(e,n,t){"use strict";t.r(n),t.d(n,"default",function(){return r});var a=t(1),o=t.n(a);class r extends o.a.Component{componentDidMount(){0===location.pathname.indexOf("/rewrite-new.html")?this.props.history.replace({pathname:location.pathname.replace("rewrite-","")}):0===location.pathname.indexOf("/rewrite-")&&(location.href=location.pathname.replace("rewrite-",""))}render(){return null}}}}]);
+//# sourceMappingURL=Rewrite.js.map

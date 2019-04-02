@@ -1,0 +1,58 @@
+.tabs{
+    :global{
+        .ant-tabs-nav-scroll{
+            text-align: center;
+        }
+    }
+    .router{
+        overflow-y: scroll;
+        height: 142px;
+        width: 442px;
+        margin: 0 auto;
+        border: 1px solid rgb(217,217,217);
+        padding: 5px;
+        border-radius: 4px;
+        .addFormItems{
+            :global {
+                .ant-form-item{
+                    margin-bottom: 5px!important;
+                }
+            }
+            .pre{
+                margin-top: 6px;
+            }
+            .after{
+                margin-top: 6px;
+            }
+        }
+        .routerButton{
+            text-align: center;
+        }
+    }
+    .odinMetric{
+        overflow-y: scroll;
+        height: 337px;
+        border: 1px solid rgb(217,217,217);
+        padding: 5px;
+        border-radius: 4px;
+        :global{
+            .ant-input-group-addon{
+                width: 70px;
+            }
+        }
+        .metricItem{
+            position: relative;
+            :global{
+                .ant-form-item{
+                    margin: 0px;
+                }
+            }
+        }
+        .metricButton{
+            text-align: center;
+        }
+        .removeIcon{
+            display: none;
+        }
+    }
+}

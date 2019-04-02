@@ -1,0 +1,74 @@
+.singleTask {
+  margin: 24px;
+  .pressureBox {
+    padding:0 0 5px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom:1px solid #ccc;
+    .httpSingle {
+      margin-top:10px;
+      em {
+        font-style: normal;
+        color: #1890ff;
+      }
+    }
+    .pressureButton {
+      .launchPressure {
+        margin-right: 10px;
+      }
+    }
+  }
+  .thriftBox {
+    min-height:300px;
+    bacckground:red;
+  }
+  .method {
+    margin: 10px 0 10px 0;
+  }
+  .idl {
+    display: flex;
+    justify-content: space-between;
+    .idlSpan{
+      margin-top:5px;
+    }
+  }
+  .serverName{
+    margin-top:10px;
+    display: flex;
+    justify-content: space-between;
+    .serverNameSpan{
+      margin-top:5px;
+    }
+  }
+  .methodName {
+    margin-top:10px;
+    display: flex;
+    justify-content: space-between;
+    .methodNameSpan{
+      margin-top:5px;
+    }
+  }
+  :global {
+    .ant-table-pagination.ant-pagination {
+      float: none;
+      display: flex;
+      justify-content: center;
+
+      > li {
+        display: block;
+      }
+    }
+  }
+  .httpContent {
+    margin-top: 5px;
+    .task {
+      margin-bottom: 10px;
+    }
+  }
+  .index {
+    text-align: right;
+    line-height: 36px;
+    font-size: 16px;
+  }
+}

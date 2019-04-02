@@ -1,0 +1,72 @@
+.tabContent {
+    padding: 18px 24px 0 24px;
+    background-color: #fff;
+    .topIn{
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        line-height: 22px;
+        color: rgba(0,0,0,0.65);
+        .topInItem{
+            margin-left: 15px;
+            cursor: pointer;
+        }
+        .topInItemActive{
+            color: #1890FF;
+        }
+    }
+    .table{
+        margin-top: 20px;
+        :global {
+            .ant-table-bordered .ant-table-thead > tr > th, .ant-table-bordered .ant-table-tbody > tr > td{
+                height: 46px;
+            }
+            .ant-table-expand-icon-th, .ant-table-tbody > tr > td:nth-child(1){
+                display: none;
+            }
+            .ant-table-expanded-row > td:nth-child(2):hover {
+                background-color: initial;
+            }
+        }
+        .expandedTable{
+            margin-top: 12px;
+            padding: 0px 6px 0px 6px;
+            .expandedTableTitle{
+                margin-bottom: 14px;
+                .expandedTableTitle{
+                    position: relative;
+                    margin-right: 40px;
+                    .expandedTableTitleValueName{
+                        position: relative;
+                    }
+                    .expandedTableTitleValue{
+                        margin-left: 10px;
+                    }
+                }
+            }
+            :global{
+                .ant-table-expand-icon-th, .ant-table-tbody > tr > td:nth-child(1){
+                    display: block;
+                }
+            }
+        }
+        .expandDetails{
+            color: #1890FF;
+            cursor: pointer;
+            font-family: PingFangSC-Regular;
+        }
+        .interfaceTitle{
+            margin-left: 15px;
+            width: 300px;
+        }
+        .record{
+            margin-right: 5px;
+        }
+        .lineChart{
+            cursor: pointer;
+        }
+    }
+}
+.noEchartData{
+    text-align: center;
+    margin-left: -30px;
+}

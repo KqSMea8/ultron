@@ -1,0 +1,45 @@
+/**
+ * Copyright (c) 2018-present, Didi, Inc.
+ * All rights reserved.
+ *
+ * @author Cory(kuanghongrui@didichuxing.com)
+ *
+ * @file The less style of AbstractMenuBar
+ */
+
+.menuBar {
+  color: #FFF !important;
+  background-color: transparent !important;
+  border-bottom-color: transparent !important;
+  height: 100%;
+  :global {
+    .ant-menu-item,
+    .ant-menu-submenu {
+      color: rgba(255, 255, 255, 0.65) !important;
+      padding: 9px 20px!important;
+      border-bottom: none !important;
+    }
+    .ant-menu-item {
+      &.ant-menu-item-selected {
+        background-color: #1890ff!important
+      }
+    }
+    .ant-menu-item {
+      &.ant-menu-item-open,
+      &.ant-menu-item-active,
+      &.ant-menu-item-selected {
+        color: #FFF !important;
+        border-bottom: none !important;
+      }
+    }
+    .ant-menu-submenu {
+      &.ant-menu-submenu-open,
+      &.ant-menu-submenu-active,
+      &.ant-menu-submenu-selected,
+      .ant-menu-submenu-title:hover {
+        color: #FFF !important;
+        border-bottom: none !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{1064:function(n,e,t){"use strict";t.r(e),t.d(e,"default",function(){return a});var r=t(1),o=t.n(r);class a extends o.a.Component{render(){return o.a.createElement("div",null,"Home")}}}}]);
+//# sourceMappingURL=Index.js.map

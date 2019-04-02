@@ -1,0 +1,12 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended",
+        "tslint-react",
+        "./tslint.base.json"
+    ],
+    "rules": {
+        "no-debugger": true,
+        "no-console": [ true, "log", "trace" ]
+    }
+}

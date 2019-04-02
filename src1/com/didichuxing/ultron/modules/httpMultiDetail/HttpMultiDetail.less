@@ -1,0 +1,63 @@
+.singleTask {
+  margin: 24px;
+  .pressureBox {
+    padding:0 0 5px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom:1px solid #ccc;
+    .httpSingle {
+      margin-top:10px;
+      em {
+        font-style: normal;
+        color: #1890ff;
+      }
+    }
+    .pressureButton {
+      .launchPressure {
+        margin-right: 10px;
+      }
+    }
+  }
+  .tab{
+    min-height: 220px;
+    .log{
+      margin-bottom: 10px;
+    }
+    .task {
+      margin-bottom: 10px;
+    }
+  }
+  :global {
+    .ant-table-pagination.ant-pagination {
+      float: none;
+      display: flex;
+      justify-content: center;
+
+      > li {
+        display: block;
+      }
+    }
+    .ant-table-title {
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+    }
+  }
+}
+.table {
+  margin-top: 20px;
+  :global {
+    .ant-table-thead > tr > th {
+      text-align: center;
+    }
+    .ant-table-tbody > tr > td {
+      text-align: right;
+    }
+    .ant-table-tbody > tr > td:nth-child(1) {
+      text-align: center;
+    }
+    .ant-table-tbody > tr > td:nth-child(2) {
+      text-align: center;
+    }
+  }
+}

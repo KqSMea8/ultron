@@ -1,0 +1,117 @@
+/**
+ * Copyright (c) 2018-present, Didi, Inc.
+ * All rights reserved.
+ *
+ * @author Cory(kuanghongrui@didichuxing.com)
+ *
+ * @file The less style of NormalHeader
+ */
+
+.menuBar {
+  display: flex;
+  align-items: center;
+}
+.tips {
+  width: 100%;
+  height: 20px;
+  //position: fixed;
+  //top:64px;
+  //left:0px;
+  background:#f0f2f5;
+  color: #f44;
+  line-height: 20px;
+  text-align: center;
+  // z-index: 9;
+}
+.headerRight{
+  position: absolute;
+  right:25px;
+  .userBox {
+    float:right;
+    cursor: pointer;
+    .suserName {
+      line-height: 0px;
+      margin-top:28px;
+      color:#fff;
+      text-align: center;
+    }
+    .headerToolbar{
+      width:110px;
+      height:21px;
+      margin: 12px auto 0;
+      line-height: 21px;
+      background:#fff;
+      border-radius: 0 0 5px 5px;
+      text-align: center;
+      font-size: 12px;
+      opacity: 0;
+    }
+    &:hover .headerToolbar{
+      opacity: 1;
+    }
+    &:hover .suserName {
+      color:#1890ff;
+    }
+
+  }
+  .yace {
+    position: relative;
+    width:100px;
+    height:30px;
+    cursor: pointer;
+    float:left;
+    margin-top:21px;
+    .normalCircle{
+      width:18px;
+      height:18px;
+      border:2px solid #fff;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 14px;
+      margin-left:60px;
+      .normalCircleNum {
+        color:#fff;
+      }
+    }
+    .yaceing{
+      .yaceingCircle {
+        width:20px;
+        height:20px;
+        // border:2px solid #fff;
+        background: url('circle.gif');
+        border-radius: 50%;
+        line-height: 20px;
+        text-align: center;
+        margin-left:60px;
+        .normalCircleNum{
+          color:#fff;
+        }
+      }
+      .showHide{
+        display: none;
+        position: absolute;
+        right:0;
+        top:30px;
+        border-radius: 4px;
+        background:#fff;
+        text-align: left;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+        z-index: 99;
+        div{
+          height:28px;
+          line-height:28px;
+          color:#102348;
+          padding:0 10px;
+          white-space: nowrap;
+        }
+        div:hover{
+          background:rgba(1,176,255,0.2);
+          cursor:pointer ;
+        }
+      }
+    }
+    &:hover .showHide{
+      display: block;
+    }
+  }
+}
